@@ -12,7 +12,7 @@ packages:
   - name: v1
 
     actions:
-      - name: providers
+      - name: hello
 
         runtime: "python:default"
 
