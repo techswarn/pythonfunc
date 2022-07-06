@@ -1,5 +1,21 @@
+environment:
+  API_KEY: "${API_KEY}"
+
+  DATABASE_URL: "${DATABASE_URL}"
+
+  S3_ACCESS_KEY: "${S3_ACCESS_KEY}"
+  S3_ACCESS_URL: "${S3_ACCESS_URL}"
+  S3_BUCKET_KEY: "${S3_BUCKET_KEY}"
+  S3_SECRET_KEY: "${S3_SECRET_KEY}"
+
 packages:
-  - name: sample
+  - name: v1
+
     actions:
-      - name: hello
+      - name: providers
+
         runtime: "python:default"
+
+        limits:
+          timeout: 1000
+          memory: 128
