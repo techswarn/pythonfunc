@@ -9,11 +9,9 @@ environment:
   S3_SECRET_KEY: "${S3_SECRET_KEY}"
 
 packages:
-  - name: v1
-
+  - name: sample
     actions:
       - name: hello
-
         runtime: "python:default"
 
         limits:
